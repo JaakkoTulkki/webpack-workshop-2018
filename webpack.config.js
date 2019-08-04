@@ -25,6 +25,8 @@ module.exports = ({ mode, presets } = { mode: "production", presets: [] }) => {
         ]
       },
       output: {
+        // libraryTarget: 'umd',
+        // library: 'app_name',
         filename: "bundle.js"
       },
       plugins: [new HtmlWebpackPlugin(), new webpack.ProgressPlugin()]
